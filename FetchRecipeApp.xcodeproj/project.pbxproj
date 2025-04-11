@@ -29,20 +29,33 @@
 		04C05CC12DA757B200821D5E /* FetchRecipeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchRecipeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		045E89382DA8AA290049D57A /* Exceptions for "FetchRecipeApp" folder in "FetchRecipeApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/ImageCacheManagerTests.swift,
+				Tests/RecipeServiceTest.swift,
+			);
+			target = 04C05CA82DA757AF00821D5E /* FetchRecipeApp */;
+		};
+		045E89392DA8AA290049D57A /* Exceptions for "FetchRecipeApp" folder in "FetchRecipeAppTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/ImageCacheManagerTests.swift,
+				Tests/RecipeServiceTest.swift,
+			);
+			target = 04C05CB62DA757B200821D5E /* FetchRecipeAppTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		04C05CAB2DA757AF00821D5E /* FetchRecipeApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				045E89382DA8AA290049D57A /* Exceptions for "FetchRecipeApp" folder in "FetchRecipeApp" target */,
+				045E89392DA8AA290049D57A /* Exceptions for "FetchRecipeApp" folder in "FetchRecipeAppTests" target */,
+			);
 			path = FetchRecipeApp;
-			sourceTree = "<group>";
-		};
-		04C05CBA2DA757B200821D5E /* FetchRecipeAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FetchRecipeAppTests;
-			sourceTree = "<group>";
-		};
-		04C05CC42DA757B200821D5E /* FetchRecipeAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FetchRecipeAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,8 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				04C05CAB2DA757AF00821D5E /* FetchRecipeApp */,
-				04C05CBA2DA757B200821D5E /* FetchRecipeAppTests */,
-				04C05CC42DA757B200821D5E /* FetchRecipeAppUITests */,
 				04C05CAA2DA757AF00821D5E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +141,6 @@
 			dependencies = (
 				04C05CB92DA757B200821D5E /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				04C05CBA2DA757B200821D5E /* FetchRecipeAppTests */,
-			);
 			name = FetchRecipeAppTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +160,6 @@
 			);
 			dependencies = (
 				04C05CC32DA757B200821D5E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				04C05CC42DA757B200821D5E /* FetchRecipeAppUITests */,
 			);
 			name = FetchRecipeAppUITests;
 			packageProductDependencies = (
@@ -403,7 +408,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
@@ -440,7 +445,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
@@ -464,7 +469,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = t.FetchRecipeAppTests;
@@ -486,7 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = t.FetchRecipeAppTests;
