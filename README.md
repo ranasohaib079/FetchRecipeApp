@@ -4,7 +4,7 @@
 This project is a SwiftUI-based recipe app built as a take-home challenge for Fetch. It retrieves recipes from a remote API and displays each recipe's name, photo, and cuisine type. The app uses Swift Concurrency (async/await) for networking and implements a custom image caching solution to minimize network usage. Additional features include error handling, pull-to-refresh functionality, and a cuisine filter that allows users to filter recipes by nationality type.
 
 ### Screenshots / Demo Video
-[![Demo Video](https://img.youtube.com/vi/8RGS_wE_sq4/0.jpg)](https://youtu.be/8RGS_wE_sq4)
+[![Demo Video](https://img.youtube.com/vi/fTC8midE0nU/0.jpg)](https://youtu.be/fTC8midE0nU)
 
 ## Focus Areas
 - **Swift Concurrency & Networking:**  
